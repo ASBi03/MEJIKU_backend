@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --mejiku-orange: #F66606;
+  --mejiku-yellow: #FAB800;
+  --mejiku-blue: #009EFF;
+  --mejiku-bg: #FFFDF8;
+  --mejiku-soft-blue: #EAF7FF;
+  --mejiku-aqua: #DDF8FA;
+  --mejiku-navy: #173B75;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #FFFDF8;
+  color: #173B75;
+  font-family: var(--font-nunito), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .font-heading {
+    font-family: var(--font-fredoka), system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-nunito), system-ui, sans-serif;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-full bg-[#F66606]
+    px-6 py-3 text-sm font-bold text-white shadow-sm transition
+    hover:scale-[1.03] hover:bg-[#ff7a1a] active:scale-95;
+    font-family: var(--font-nunito), system-ui, sans-serif;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-full border-2
+    border-[#009EFF] bg-white px-6 py-3 text-sm font-bold text-[#009EFF]
+    shadow-sm transition hover:scale-[1.03] hover:bg-[#EAF7FF] active:scale-95;
+    font-family: var(--font-nunito), system-ui, sans-serif;
+  }
+
+  .badge-soft {
+    @apply inline-flex rounded-full bg-[#FFF1C8] px-3 py-1 text-xs font-semibold text-[#F66606];
+    font-family: var(--font-fredoka), system-ui, sans-serif;
+  }
+  
+  .input-auth {
+  @apply h-11 w-full rounded-lg border border-gray-300 px-4 text-sm outline-none focus:border-[#009EFF];
+  }
+
+  .btn-auth {
+  @apply h-11 w-full rounded-lg bg-[#16B8C2] text-sm font-semibold text-white hover:bg-[#009EFF];
+  }
+}
+
