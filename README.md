@@ -1,4 +1,4 @@
-# MARICA - Auth System (Backend & Frontend)
+# MEJIKU - Auth System (Backend & Frontend)
 
 Project ini dilakukan untuk pengembangan website MEJIKU pada sistem autentikasi pengguna (Registrasi, Login, dan Reset Password). Sistem ini dibuat untuk memenuhi target OKR dalam membangun fungsi katalog dan portal komunitas.
 
